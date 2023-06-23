@@ -16,10 +16,5 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up JDK
-        uses: actions/setup-java@v2
-        with:
-          java-version: '11'
-
       - name: Run Maven Command
         run: mvn install -Ptest -Dusername=somayajula1996-eval -Dpassword=Ground@2021 -Dapigee.config.options=create
